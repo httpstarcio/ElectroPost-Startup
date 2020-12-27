@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/index.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <div class="logo">Energy</div>
+        <img src="/images/background.png" class="bg">
+
+        <div class="content">
+            <h2>Let's Make<br>Something Creative</h2>
+            <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad id porro cupiditate.
+                Optio minus veniam, harum, dolorem magnam beatae facilis blanditiis assumenda quisquam
+                deleniti similique odio ipsa minima quis et.</p>
+            <a href="#">Get Started</a>
+        </div>
+
+        <p class="copyrightText">O que é perigoso, é não evoluir.</p>
+    </section>
+
+    <div class="menuToggle" onclick="toogleMenu();">
+        <div class="navigation">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Para motoristas</a></li>
+                <li><a href="#">Para empresas</a></li>
+                <li><a href="#">Nossos escritórios</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+
+            <div class="socialBar">
+                <a href="mailto:you@email.com" class="emailBx"><img src="/images/email.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function toogleMenu(){
+            var menuToggle = document.querySelector('.menuToggle');
+            var navigation = document.querySelector('.navigation');
+
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+</body>
+</html>
